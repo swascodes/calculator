@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Default pitch black background */
+  }
+  
+  .theme-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .theme-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Common Calculator Styles */
+  .calculator {
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  #display {
+    width: 100%;
+    padding: 15px;
+    text-align: right;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  button.zero {
+    grid-column: span 2;
+  }
+  
+  /* ---------- Dark Theme ---------- */
+  .dark-theme {
+    background-color: #333;
+  }
+  
+  .dark-theme #display {
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .dark-theme button {
+    background-color: #444;
+    color: white;
+  }
+  
+  .dark-theme button:hover {
+    background-color: #555;
+  }
+  
+  /* ---------- Light Theme ---------- */
+  .light-theme {
+    background-color: #f4f4f4;
+  }
+  
+  .light-theme #display {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .light-theme button {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .light-theme button:hover {
+    background-color: #ccc;
+  }
+  
+  /* ---------- Metallic Theme ---------- */
+  .metallic-theme {
+    background: linear-gradient(145deg, #4e5d6c, #9daab6);
+  }
+  
+  .metallic-theme #display {
+    background-color: #1c1f26;
+    color: #fff;
+  }
+  
+  .metallic-theme button {
+    background: linear-gradient(145deg, #627d98, #a4b2c2);
+    color: white;
+  }
+  
+  .metallic-theme button:hover {
+    background: linear-gradient(145deg, #7f99b1, #b6c6d8);
+  }
+  
